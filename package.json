@@ -1,0 +1,25 @@
+{
+  "name": "sync-promise",
+  "version": "1.0.0",
+  "description": "A synchronous implementation of the promises/A+ standard",
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nicdard/sync-promise.git"
+  },
+  "author": "Nicola Dardanis",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/nicdard/sync-promise/issues"
+  },
+  "homepage": "https://github.com/nicdard/sync-promise#readme",
+  "devDependencies": {
+    "@types/jest": "^26.0.14",
+    "jest": "^26.4.2",
+    "jest-extended": "^0.11.5",
+    "ts-jest": "^26.4.0",
+    "typescript": "^4.0.3"
+  }
+}
