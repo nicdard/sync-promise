@@ -108,7 +108,7 @@ export class SyncPromise<T = any> implements Thenable<T> {
                     // 2.3.3.3 If then is a function, call it with value as this, first argument resolvePromise, and second argument rejectPromise
                     let called = false;
                     try {
-                        then((y: any) => { // 2.3.3.3.1 If/when resolvePromise is called with a value y, run [[Resolve]](promise, y)
+                        then.call(this, (y: any) => { // 2.3.3.3.1 If/when resolvePromise is called with a value y, run [[Resolve]](promise, y)
                             if (called === true) return;
                             // 2.3.3.3.3 If both resolvePromise and rejectPromise are called,
                             // or multiple calls to the same argument are made,
