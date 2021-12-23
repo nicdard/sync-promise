@@ -2,14 +2,25 @@
   "name": "sync-promise",
   "version": "1.0.0",
   "description": "A synchronous implementation of the promises/A+ standard",
+  "main": "lib/promise.js",
+  "types": "lib/promise.d.ts",
+  "files": ["lib/**/*"],
   "scripts": {
-    "test": "jest --coverage"
+    "build": "tsc",
+    "test": "jest --coverage",
+    "clean": "rm -r ./lib",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/nicdard/sync-promise.git"
   },
   "author": "Nicola Dardanis",
+  "keywords": [ 
+    "promise",
+    "Promises/A+"
+  ],
   "license": "SEE LICENSE IN LICENSE",
   "bugs": {
     "url": "https://github.com/nicdard/sync-promise/issues"
