@@ -1,5 +1,5 @@
 # sync-promise
-A synchronous implementation of the Promises/A+ standard
+A synchronous implementation of the Promises/A+ standard.
 
 ## Notes
 This implementation:
